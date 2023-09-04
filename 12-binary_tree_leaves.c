@@ -9,6 +9,7 @@
 */
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
+size_t left_leaves, right_leaves;
 /* Caso base: Si el árbol es NULL, no hay hojas. */
 if (tree == NULL)
 return (0);
@@ -16,8 +17,8 @@ return (0);
 if (tree->left == NULL && tree->right == NULL)
 return (1);
 /* Recursivamente contamos las hojas en los subárboles izquierdo y derecho. */
-size_t left_leaves = binary_tree_leaves(tree->left);
-size_t right_leaves = binary_tree_leaves(tree->right);
+left_leaves = binary_tree_leaves(tree->left);
+right_leaves = binary_tree_leaves(tree->right);
 /* Retornamos la suma de las hojas en ambos subárboles. */
 return (left_leaves + right_leaves);
 }
