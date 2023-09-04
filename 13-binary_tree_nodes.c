@@ -2,9 +2,8 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_nodes - Cuenta los nodos con al menos 1 hijo en un árbol binario.
+* binary_tree_nodes - Cuenta los nodos con al menos 1 hijo en un árbol binario.
 * @tree: Un puntero al nodo raíz del árbol para contar los nodos con hijos.
-*
 * Return: El número de nodos con al menos 1 hijo en el árbol, o 0 si el árbol es NULL.
 */
 size_t binary_tree_nodes(const binary_tree_t *tree)
